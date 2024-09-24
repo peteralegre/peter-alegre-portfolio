@@ -4,3 +4,30 @@ node_modules/
 # Build output
 .next/
 out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env*
+!.env.example
+
+# Coverage directory
+coverage/
+
+# Ignore local development files
+*.local
+*.lock
+
+# MacOS files
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+
+# Ignore specific Next.js build artifacts
+*.next/
+*.cache/
