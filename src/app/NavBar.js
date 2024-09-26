@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import React from 'react';
 
 const NavBar = () => {
 	return (
 		<>
-			<div>Work</div>
-			<div>About</div>
+			<Link href="/">Work</Link>
+			<Link href="/about">About</Link>
 		</>
 	);
 };
