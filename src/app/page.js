@@ -1,6 +1,5 @@
-import Image from 'next/image';
+import MasonryGrid from './MasonryGrid';
 import NavBar from './NavBar';
-import MasonryGrid from './MasonGrid';
 
 export default function Home() {
 	return (
