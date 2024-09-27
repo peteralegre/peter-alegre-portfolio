@@ -6,18 +6,19 @@ import styled from 'styled-components';
 
 //rearrange these to change the order of the photos
 const photos = [
-	'/photos/PAL_1730_4x5_headshot.jpg',
-	'/photos/29-4x5-small.jpg',
-	'/photos/15-7x5-small-fav.jpg',
-	'/photos/13--f1.4-1_8sec4x5.jpg',
-	'/photos/PAL_0827.jpg',
-	'/photos/PAL_1477-2.jpg',
-	'/photos/PAL_1990.jpg',
-	'/photos/18.jpg',
-	'/photos/18-golf-swing.jpg',
-	'/photos/PAL_1985.jpg',
-	'/photos/PAL_0782-1x1.jpg',
-	'/photos/PAL_2078.jpg'
+	'/photos/1 Street.jpg',
+	'/photos/2 Street.jpg',
+	'/photos/3 Street.jpg',
+	'/photos/4 Street.jpg',
+	'/photos/5 Street.jpg',
+	'/photos/6 Street.jpg',
+	'/photos/7 Street.jpg',
+	'/photos/8 Portrait.jpg',
+	'/photos/9 Portrait.jpg',
+	'/photos/10 Portrait.jpg',
+	'/photos/11 Portrait.jpg',
+	'/photos/12 Portrait.jpg',
+	'/photos/13 Portrait.jpg'
 ];
 
 const MasonryGrid = () => {
