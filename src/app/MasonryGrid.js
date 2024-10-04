@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import { RowsPhotoAlbum } from "react-photo-album";
-import "react-photo-album/rows.css";
+import { MasonryPhotoAlbum } from "react-photo-album";
+import "react-photo-album/masonry.css";
 
 const photos = [
   { src: "/photos/1 Street.jpg", width: 800, height: 600 },
@@ -39,7 +39,7 @@ const photos = [
 const MasonryGrid = () => {
   return (
     <>
-    <RowsPhotoAlbum photos={photos} />
+    <MasonryPhotoAlbum photos={photos} />
 
     </>
   )
