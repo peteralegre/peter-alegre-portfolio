@@ -1,9 +1,15 @@
+"use client";
+import styled from 'styled-components';
 import MasonryGrid from './MasonryGrid';
 
 export default function Home() {
 	return (
-		<main>
+		<StyledMain>
 			<MasonryGrid />
-		</main>
+		</StyledMain>
 	);
 }
+
+const StyledMain = styled.main`
+	margin-top: 24px;
+`;
