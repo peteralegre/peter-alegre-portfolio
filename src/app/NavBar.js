@@ -15,7 +15,7 @@ const NavBar = () => {
 			<StyledNavbar shouldHideOnScroll>
 				<StyledNavbarContent>
 					<StyledNavbarItem>
-						<Link href="#">Work</Link>
+						<Link href="/">Work</Link>
 					</StyledNavbarItem>
 					<StyledNavbarItem isActive>
 						<Link href="/about">About</Link>
@@ -41,11 +41,12 @@ const StyledNavbar = styled(Navbar)`
 
 const StyledNavbarContent = styled(NavbarContent)`
 	display: flex;
-	gap: 1.5rem; /* Adjust spacing between items */
+	gap: 2rem; /* Adjust spacing between items */
 `;
 
 const StyledNavbarItem = styled(NavbarItem)`
 	list-style-type: none;
+	font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
 	a {
 		color: #fff; /* Example: change link color */
 		text-decoration: none;
