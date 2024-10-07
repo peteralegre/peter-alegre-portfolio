@@ -87,13 +87,10 @@
   
   body {
     color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        rgb(var(--background-end-rgb))
-      )
-      rgb(var(--background-start-rgb));
-  }
+    background-color: black; /* Fallback for browsers that don't support gradients */
+    background: radial-gradient(75% 35% at 50% 95%, rgba(80, 82, 98, 0.6) 20%, rgba(80, 82, 98, 0) 90%), /* Spotlight gradient */
+                linear-gradient(rgba(28, 35, 50, 0) 0%, rgba(28, 35, 50, 1) 80%); /* Background gradient */
+}
   
   a {
     color: inherit;
