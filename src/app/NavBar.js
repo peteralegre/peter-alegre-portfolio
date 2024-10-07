@@ -21,7 +21,7 @@ const NavBar = () => {
 						<Link href="/about">About</Link>
 					</StyledNavbarItem>
 					<StyledNavbarItem>
-						<Link href="#">Contact</Link>
+						<Link href="/contact">Contact</Link>
 					</StyledNavbarItem>
 				</StyledNavbarContent>
 			</StyledNavbar>
