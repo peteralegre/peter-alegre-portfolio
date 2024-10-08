@@ -76,6 +76,7 @@ const StyledNavbarItem = styled(NavbarItem)`
 	a {
 		color: #fff; /* Example: change link color */
 		text-decoration: none;
+		font-size: 1.3rem; /* Adjust font size */
 
 		&:hover {
 			color: #f0a500; /* Example: hover effect */
