@@ -1,21 +1,34 @@
-import { Inter } from 'next/font/google';
-import NavBar from './NavBar';
-import './global.css'; // Global CSS
+'use client';
 
-const inter = Inter({ subsets: ['latin'] });
+import GlobalStyles from './globalStyles'; // Ensure you have this global style file
+import NavBar from './NavBar'; // Import your NavBar
+import { useEffect, useState } from 'react';
 
-export const metadata = {
-	title: 'Peter Alegre',
-	description: 'Photography Portfolio'
-};
+const RootLayout = ({ children }) => {
+	const [isMounted, setIsMounted] = useState(false);
 
-export default function RootLayout({ children }) {
+	useEffect(() => {
+		// This ensures the component is mounted and styled-components can avoid FOUC
+		setIsMounted(true);
+	}, []);
+
+	// Prevent rendering until the app is fully mounted to avoid FOUC
+	if (!isMounted) {
+		return null;
+	}
+
 	return (
 		<html lang="en">
+			<head>
+				{/* You can add meta tags, link to fonts, etc. in the <head> */}
+			</head>
 			<body>
+				<GlobalStyles />
 				<NavBar />
 				<main>{children}</main>
 			</body>
 		</html>
 	);
-}
+};
+
+export default RootLayout;
