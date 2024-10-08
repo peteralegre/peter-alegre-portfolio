@@ -11,5 +11,5 @@ export default function Home() {
 }
 
 const StyledMain = styled.main`
-	margin-top: 24px;
+	margin: 24px 16px 0px 16px;
 `;
