@@ -40,6 +40,7 @@ const StyledNavbar = styled(Navbar)`
 	justify-content: center;
 	align-items: center;
 	padding: 1rem;
+	padding-top: 5rem;
 	position: relative; /* Necessary for the absolute positioning of the pseudo-element */
 	width: 33%;
 
