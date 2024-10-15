@@ -192,13 +192,13 @@ const photos = [
 	//* Use these opjects for testing */
 
 	{
-		src: '/photos/1 Street.jpg',
+		src: 'peter-alegre-portfolio/photos/1 Street.jpg',
 		width: 454,
 		height: 307,
 		alt: '1 Street.jpg PLACEHOLDER'
 	},
 	{
-		src: '/photos/2 Street.jpg',
+		src: 'peter-alegre-portfolio/photos/2 Street.jpg',
 		width: 782,
 		height: 518,
 		alt: '2 Street.jpg PLACEHOLDER'
