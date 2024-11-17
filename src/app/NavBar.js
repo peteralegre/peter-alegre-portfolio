@@ -55,7 +55,7 @@ const StyledNavbar = styled(Navbar)`
 		background: linear-gradient(
 			to right,
 			transparent,
-			#fff 50%,
+			#000 50%,
 			transparent
 		); /* Fading effect */
 	}
@@ -74,7 +74,7 @@ const StyledNavbarItem = styled(NavbarItem)`
 	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
 		Consolas, Liberation Mono, Courier New, monospace;
 	a {
-		color: #fff; /* Example: change link color */
+		color: #000; /* Example: change link color */
 		text-decoration: none;
 		font-size: 1.3rem; /* Adjust font size */
 
