@@ -192,13 +192,13 @@ const photos = [
 	//* Use these opjects for testing */
 
 	{
-		src: 'https://github.com/peteralegre/peter-alegre-portfolio/blob/main/public/photos/1%20Street.jpg',
+		src: '/photos/1 Street.jpg',
 		width: 454,
 		height: 307,
 		alt: '1 Street.jpg PLACEHOLDER'
 	},
 	{
-		src: 'peter-alegre-portfolio/photos/2 Street.jpg',
+		src: '/photos/2 Street.jpg',
 		width: 782,
 		height: 518,
 		alt: '2 Street.jpg PLACEHOLDER'
