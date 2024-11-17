@@ -10,15 +10,13 @@ const About = () => {
 				<Image
 					src="/photos/Polaroid Self Portrait Exhibit.jpg"
 					alt="PLACEHOLDER"
-          width={1000}
-          height={600}
+					width={1000}
+					height={600}
 				/>
 			</Headshot>
-
 			<TextContainer>
 				<Paragraph>
-					NYC born & raised photographer.
-					
+					Peter Alegre is a NYC based photographer
 				</Paragraph>
 			</TextContainer>
 		</AboutContainer>
@@ -40,14 +38,13 @@ const AboutContainer = styled.div`
 `;
 
 const Headshot = styled.div`
-	width: 750px; 
+	width: 750px;
 	height: 600px;
-	
+
 	@media screen and (max-width: 750px) {
 		width: 500px;
 		height: 400px;
 	}
-	
 `;
 
 const TextContainer = styled.div`
