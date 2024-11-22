@@ -71,8 +71,6 @@ const StyledNavbarContent = styled(NavbarContent)`
 
 const StyledNavbarItem = styled(NavbarItem)`
 	list-style-type: none;
-	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
-		Consolas, Liberation Mono, Courier New, monospace;
 	a {
 		color: #000; /* Example: change link color */
 		text-decoration: none;
