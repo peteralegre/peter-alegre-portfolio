@@ -1,7 +1,7 @@
 'use client';
 
-import GlobalStyles from './globalStyles'; // Ensure you have this global style file
-import NavBar from './NavBar'; // Import your NavBar
+import GlobalStyles from './globalStyles';
+import NavBar from './NavBar';
 import { useEffect, useState } from 'react';
 
 const RootLayout = ({ children }) => {

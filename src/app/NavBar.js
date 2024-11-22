@@ -34,7 +34,8 @@ export default NavBar;
 const NavContainer = styled.div`
 	display: flex;
 	justify-content: center;
-`;
+	padding: 0px;
+	`;
 
 const StyledNavbar = styled(Navbar)`
 	justify-content: center;
@@ -42,7 +43,7 @@ const StyledNavbar = styled(Navbar)`
 	padding: 1rem;
 	padding-top: 5rem;
 	position: relative; /* Necessary for the absolute positioning of the pseudo-element */
-	width: 33%;
+	width: 100%;
 
 	// Add a pseudo-element with a gradient to the bottom of the navbar
 	&:before {
@@ -66,7 +67,6 @@ const StyledNavbarContent = styled(NavbarContent)`
 	justify-content: center; 
 	align-items: center; 
 	gap: 2rem; /* Adjust spacing between items */
-	width: 100%;
 `;
 
 const StyledNavbarItem = styled(NavbarItem)`
