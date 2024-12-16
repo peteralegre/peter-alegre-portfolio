@@ -15,7 +15,7 @@ const NavBar = () => {
 			<StyledNavbar shouldHideOnScroll isBordered>
 				<StyledNavbarContent>
 					<StyledNavbarItem>
-						<Link href="/">Work</Link>
+						<Link href="/work">Work</Link>
 					</StyledNavbarItem>
 					<StyledNavbarItem isActive>
 						<Link href="/about">About</Link>
@@ -32,49 +32,32 @@ const NavContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	padding: 0px;
-	`;
-
-const StyledNavbar = styled(Navbar)`
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-	padding-top: 5rem;
-	position: relative; /* Necessary for the absolute positioning of the pseudo-element */
-	width: 100%;
-
-	// Add a pseudo-element with a gradient to the bottom of the navbar
-	&:before {
-		content: '';
-		position: absolute;
-		bottom: 0; 
-		left: 0;
-		right: 0;
-		height: 2px; /* Height of the border */
-		background: linear-gradient(
-			to right,
-			transparent,
-			#000 50%,
-			transparent
-		); /* Fading effect */
-	}
+	width: 20vw;
+	height: fit-content;
 `;
+
+const StyledNavbar = styled(Navbar)``;
 
 const StyledNavbarContent = styled(NavbarContent)`
 	display: flex;
-	justify-content: center; 
-	align-items: center; 
-	gap: 2rem; /* Adjust spacing between items */
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
 `;
 
 const StyledNavbarItem = styled(NavbarItem)`
 	list-style-type: none;
 	a {
-		color: #000; /* Example: change link color */
+		color: #000; 
 		text-decoration: none;
-		font-size: 1.3rem; /* Adjust font size */
-
+		font-size: 2rem; 
+		/* -webkit-text-stroke: 1px #d3d3d3; */
+		transition: color 0.3s ease;
+		text-shadow: 3px 3px 3px #000;
+		
 		&:hover {
-			color: #f0a500; /* Example: hover effect */
+			color: #d3d3d3;
+			-webkit-text-stroke: 1px #000; /* Border around the text */
 		}
 	}
 `;

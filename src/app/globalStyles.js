@@ -4,11 +4,11 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    padding-right: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Garamond', serif;;
     background-color: whitesmoke;
   }
 `;
 
 export default GlobalStyles;
-

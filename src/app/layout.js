@@ -1,7 +1,7 @@
 'use client';
 
 import GlobalStyles from './globalStyles';
-import NavBar from './NavBar';
+
 import { useEffect, useState } from 'react';
 
 const RootLayout = ({ children }) => {
@@ -24,7 +24,6 @@ const RootLayout = ({ children }) => {
 			</head>
 			<body>
 				<GlobalStyles />
-				<NavBar />
 				<main>{children}</main>
 			</body>
 		</html>
