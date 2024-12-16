@@ -20,9 +20,6 @@ const NavBar = () => {
 					<StyledNavbarItem isActive>
 						<Link href="/about">About</Link>
 					</StyledNavbarItem>
-					<StyledNavbarItem>
-						<Link href="/contact">Contact</Link>
-					</StyledNavbarItem>
 				</StyledNavbarContent>
 			</StyledNavbar>
 		</NavContainer>
