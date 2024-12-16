@@ -14,6 +14,20 @@ const About = () => {
 					height={600}
 				/>
 			</Headshot>
+			<ContactContainer>
+				<SocialLink
+					href="mailto:alegrep@bxscience.com"
+					target="_blank"
+				>
+					<TextContainer>Email</TextContainer>
+				</SocialLink>
+				<SocialLink
+					href="https://www.instagram.com/peteralegre/"
+					target="_blank"
+				>
+					<TextContainer>Instagram</TextContainer>
+				</SocialLink>
+			</ContactContainer>
 			<TextContainer>
 				<Paragraph>
 					Peter Alegre is a NYC based photographer
@@ -63,4 +77,18 @@ const TextContainer = styled.div`
 
 const Paragraph = styled.div`
 	padding: 2em 0 2em 0;
+`;
+
+const ContactContainer = styled.div`
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	flex-direction: column;
+`;
+
+const SocialLink = styled.a`
+	font-family: 'CeraPro', sans-serif;
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
 `;
