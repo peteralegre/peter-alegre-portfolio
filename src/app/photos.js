@@ -245,12 +245,7 @@ const photos = [
 		height: 619,
 		alt: '9 Portrait.jpg PLACEHOLDER'
 	},
-	{
-		src: '/photos/10 Portrait.jpg',
-		width: 417,
-		height: 512,
-		alt: '10 Portrait.jpg PLACEHOLDER'
-	},
+
 	{
 		src: '/photos/11 Portrait.jpg',
 		width: 366,
@@ -269,30 +264,14 @@ const photos = [
 		height: 1292,
 		alt: '13 Portrait.jpg PLACEHOLDER'
 	},
-	{
-		src: '/photos/14 Aqueduct Racetrack Documentary.jpg',
-		width: 459,
-		height: 693,
-		alt: '14 Aqueduct Racetrack Documentary.jpg PLACEHOLDER'
-	},
+
 	{
 		src: '/photos/15 Aqueduct Racetrack Documentary.jpg',
 		width: 763,
 		height: 506,
 		alt: '15 Aqueduct Racetrack Documentary.jpg PLACEHOLDER'
 	},
-	{
-		src: '/photos/16 Aqueduct Racetrack Documentary.jpg',
-		width: 512,
-		height: 339,
-		alt: '16 Aqueduct Racetrack Documentary.jpg PLACEHOLDER'
-	},
-	{
-		src: '/photos/17 Aqueduct Documentary.jpg',
-		width: 782,
-		height: 518,
-		alt: '17 Aqueduct Documentary.jpg PLACEHOLDER'
-	},
+
 	{
 		src: '/photos/18 Aqueduct Racetrack Documentary.jpg',
 		width: 772,
@@ -305,23 +284,12 @@ const photos = [
 		height: 648,
 		alt: '19 Aqueduct Documentary.jpg PLACEHOLDER'
 	},
-	{
-		src: '/photos/20 Aqueduct Documentary.jpg',
-		width: 1208,
-		height: 1190,
-		alt: '20 Aqueduct Documentary.jpg PLACEHOLDER'
-	},
+
 	{
 		src: '/photos/21 Aqueduct Documentary.jpg',
 		width: 1208,
 		height: 1190,
 		alt: '21 Aqueduct Documentary.jpg PLACEHOLDER'
-	},
-	{
-		src: '/photos/22 Aqueduct Documentary.jpg',
-		width: 981,
-		height: 981,
-		alt: '22 Aqueduct Documentary.jpg PLACEHOLDER'
 	},
 	{
 		src: '/photos/23 Aqueduct Documentary.jpg',
@@ -336,46 +304,10 @@ const photos = [
 		alt: '24 Aqueduct Documentary.jpg PLACEHOLDER'
 	},
 	{
-		src: '/photos/25 Aqueduct Documentary.jpg',
-		width: 782,
-		height: 518,
-		alt: '25 Aqueduct Documentary.jpg PLACEHOLDER'
-	},
-	{
 		src: '/photos/26 Grand Leaners Vintage Store Profile.jpg',
 		width: 1114,
 		height: 1681,
 		alt: '26 Grand Leaners Vintage Store Profile.jpg PLACEHOLDER'
-	},
-	{
-		src: '/photos/27 Grand Leaners Vintage Store Profile.jpg',
-		width: 1123,
-		height: 1684,
-		alt: '27 Grand Leaners Vintage Store Profile.jpg PLACEHOLDER'
-	},
-	{
-		src: '/photos/28 Grand Leaners Vintage Store Profile.jpg',
-		width: 341,
-		height: 512,
-		alt: '28 Grand Leaners Vintage Store Profile.jpg PLACEHOLDER'
-	},
-	{
-		src: '/photos/29 Grand Leaners Vintage Store Profile.jpg',
-		width: 339,
-		height: 512,
-		alt: '29 Grand Leaners Vintage Store Profile.jpg PLACEHOLDER'
-	},
-	{
-		src: '/photos/30 Grand Leaners Vintage Store Profile.jpg',
-		width: 1684,
-		height: 1123,
-		alt: '30 Grand Leaners Vintage Store Profile.jpg PLACEHOLDER'
-	},
-	{
-		src: '/photos/31 Grand Leaners Vintage Store Profile.jpg',
-		width: 512,
-		height: 341,
-		alt: '31 Grand Leaners Vintage Store Profile.jpg PLACEHOLDER'
 	}
 ].map(({ src, alt, width, height }) => ({
 	src,
