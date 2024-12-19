@@ -45,9 +45,6 @@ const NavContainer = styled.div`
 	padding: 0px;
 	width: 100vw;
 	height: fit-content;
-	/* border: 1px solid red; */
-
-	/* background-color: rgba(0, 0, 0, 1); */
 	backdrop-filter: blur(20px);
 	position: absolute;
 `;
