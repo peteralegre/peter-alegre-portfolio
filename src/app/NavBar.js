@@ -45,8 +45,10 @@ const NavContainer = styled.div`
 	padding: 0px;
 	width: 100vw;
 	height: fit-content;
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(10px);
+	background: transparent;
 	position: absolute;
+	-webkit-text-stroke: .2px #d3d3d3;
 `;
 
 const StyledLink = styled(Link)`

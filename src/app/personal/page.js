@@ -20,5 +20,3 @@ const NavBarContainer = styled.div`
 	display: flex;
 	justify-content: flex-end;
 `;
-
-const MasonryGridContainer = styled.div``;
