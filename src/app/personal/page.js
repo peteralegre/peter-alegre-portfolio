@@ -5,9 +5,7 @@ import styled from 'styled-components';
 const PersonalWork = () => {
 	return (
 		<StyledMason>
-			<MasonryGridContainer>
-				<MasonryGrid />
-			</MasonryGridContainer>
+			<MasonryGrid />
 		</StyledMason>
 	);
 };
@@ -15,15 +13,12 @@ const PersonalWork = () => {
 export default PersonalWork;
 
 const StyledMason = styled.div`
-	/* border: 1px solid red; */
+	padding: 100px 40px 40px 40px;
 `;
 
 const NavBarContainer = styled.div`
-	/* border: 2px solid blue; */
 	display: flex;
 	justify-content: flex-end;
 `;
 
-const MasonryGridContainer = styled.div`
-	padding: 100px 40px 40px 40px;
-`;
+const MasonryGridContainer = styled.div``;

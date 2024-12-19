@@ -16,12 +16,12 @@ const NavBar = () => {
 			<StyledNavbar shouldHideOnScroll isBordered>
 				<StyledNavbarContent>
 					<StyledNavbarItem>
-						<Link href="/commissionWork">
+						<Link href="/commission">
 							Commission
 						</Link>
 					</StyledNavbarItem>
 					<StyledNavbarItem>
-						<Link href="/personalWork">
+						<Link href="/personal">
 							Personal
 						</Link>
 					</StyledNavbarItem>
