@@ -3,21 +3,20 @@ import MasonryGrid from '../MasonryGrid';
 import styled from 'styled-components';
 import NavBar from '../NavBar';
 
-const Work = () => {
+const PersonalWork = () => {
 	return (
 		<StyledMason>
 			<NavBarContainer>
-				<StyledNavBar />
+				<NavBar />
 			</NavBarContainer>
-            <MasonryGridContainer>
-                <MasonryGrid />
-			{/* <StyledMasonryGrid /> */}
-            </MasonryGridContainer>
+			<MasonryGridContainer>
+				<MasonryGrid />
+			</MasonryGridContainer>
 		</StyledMason>
 	);
 };
 
-export default Work;
+export default PersonalWork;
 
 const StyledMason = styled.div`
 	/* border: 1px solid red; */
@@ -25,14 +24,10 @@ const StyledMason = styled.div`
 
 const NavBarContainer = styled.div`
 	/* border: 2px solid blue; */
-    display: flex;
-    justify-content: flex-end;
-`;
-
-const StyledNavBar = styled(NavBar)`
-	/* border: 1px solid green; */
+	display: flex;
+	justify-content: flex-end;
 `;
 
 const MasonryGridContainer = styled.div`
-    padding: 100px 40px 40px 40px;
+	padding: 100px 40px 40px 40px;
 `;
