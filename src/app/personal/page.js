@@ -1,14 +1,10 @@
 'use client';
 import MasonryGrid from '../MasonryGrid';
 import styled from 'styled-components';
-import NavBar from '../NavBar';
 
 const PersonalWork = () => {
 	return (
 		<StyledMason>
-			<NavBarContainer>
-				<NavBar />
-			</NavBarContainer>
 			<MasonryGridContainer>
 				<MasonryGrid />
 			</MasonryGridContainer>
