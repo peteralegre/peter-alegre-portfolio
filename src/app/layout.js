@@ -3,6 +3,7 @@
 import GlobalStyles from './globalStyles';
 
 import { useEffect, useState } from 'react';
+import NavBar from './NavBar';
 
 const RootLayout = ({ children }) => {
 	const [isMounted, setIsMounted] = useState(false);
@@ -24,6 +25,7 @@ const RootLayout = ({ children }) => {
 			</head>
 			<body>
 				<GlobalStyles />
+				<NavBar />
 				<main>{children}</main>
 			</body>
 		</html>
