@@ -12,10 +12,18 @@ import styled from 'styled-components';
 const NavBar = () => {
 	return (
 		<NavContainer>
+			<StyledLink href="/">Peter Alegre</StyledLink>
 			<StyledNavbar shouldHideOnScroll isBordered>
 				<StyledNavbarContent>
 					<StyledNavbarItem>
-						<Link href="/work">Work</Link>
+						<Link href="/commissionWork">
+							Commission
+						</Link>
+					</StyledNavbarItem>
+					<StyledNavbarItem>
+						<Link href="/personalWork">
+							Personal
+						</Link>
 					</StyledNavbarItem>
 					<StyledNavbarItem isActive>
 						<Link href="/about">About</Link>
@@ -30,10 +38,31 @@ export default NavBar;
 
 const NavContainer = styled.div`
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	left: 0;
 	padding: 0px;
-	width: 20vw;
+	width: 100vw;
 	height: fit-content;
+	/* border: 1px solid red; */
+
+	/* background-color: rgba(0, 0, 0, 1); */
+	backdrop-filter: blur(20px);
+	position: absolute;
+`;
+
+const StyledLink = styled(Link)`
+	font-size: 2rem;
+	padding-left: 1rem;
+	text-decoration: none;
+	color: #000;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: #d3d3d3;
+		-webkit-text-stroke: 1px #000; /* Border around the text */
+	}
 `;
 
 const StyledNavbar = styled(Navbar)``;
@@ -43,18 +72,19 @@ const StyledNavbarContent = styled(NavbarContent)`
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
+	padding-right: 1rem;
 `;
 
 const StyledNavbarItem = styled(NavbarItem)`
 	list-style-type: none;
 	a {
-		color: #000; 
+		color: #000;
 		text-decoration: none;
-		font-size: 2rem; 
+		font-size: 2rem;
 		/* -webkit-text-stroke: 1px #d3d3d3; */
 		transition: color 0.3s ease;
-		text-shadow: 3px 3px 3px #000;
-		
+		/* text-shadow: 3px 3px 3px #000; */
+
 		&:hover {
 			color: #d3d3d3;
 			-webkit-text-stroke: 1px #000; /* Border around the text */
