@@ -1,14 +1,13 @@
 'use client';
 import { MasonryPhotoAlbum } from 'react-photo-album';
-import MasonryGrid from '../MasonryGrid';
+import 'react-photo-album/masonry.css';
 import styled from 'styled-components';
-import photos from '/photos/personal';
+import commission from './commissionPhotos';
 
 const CommissionWork = () => {
 	return (
 		<StyledMason>
-			{/* <MasonryGrid /> */}
-			<MasonryPhotoAlbum photos={photos} />
+			<MasonryPhotoAlbum photos={commission} />
 		</StyledMason>
 	);
 };
