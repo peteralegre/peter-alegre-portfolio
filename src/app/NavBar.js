@@ -47,7 +47,7 @@ const NavContainer = styled.div`
 	height: fit-content;
 	backdrop-filter: blur(10px);
 	background: transparent;
-	position: absolute;
+	/* position: absolute; */
 	-webkit-text-stroke: .2px #d3d3d3;
 `;
 
