@@ -10,7 +10,7 @@ const About = () => {
 				<Headshot>
 					<Image
 						src="/photos/Polaroid Self Portrait Exhibit.jpg"
-						alt="PLACEHOLDER"
+						alt="Two Polaroids headshots of Peter Alegre"
 						width={1000}
 						height={600}
 					/>
