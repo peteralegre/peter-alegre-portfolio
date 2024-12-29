@@ -2,13 +2,13 @@
 import { MasonryPhotoAlbum } from 'react-photo-album';
 import 'react-photo-album/masonry.css';
 import styled from 'styled-components';
-import photos from '../photos';
+import personal from './personalPhotos';
 
 
 const PersonalWork = () => {
 	return (
 		<StyledMason>
-			<MasonryPhotoAlbum photos={photos} columns={4}/>
+			<MasonryPhotoAlbum photos={personal} columns={4}/>
 		</StyledMason>
 	);
 };
