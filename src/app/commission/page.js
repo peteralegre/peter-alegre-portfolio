@@ -7,7 +7,7 @@ import commission from './commissionPhotos';
 const CommissionWork = () => {
 	return (
 		<StyledMason>
-			<MasonryPhotoAlbum photos={commission} />
+			<MasonryPhotoAlbum photos={commission} columns={4}/>
 		</StyledMason>
 	);
 };

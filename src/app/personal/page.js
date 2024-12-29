@@ -8,8 +8,8 @@ import MasonryGrid from '../MasonryGrid';
 const PersonalWork = () => {
 	return (
 		<StyledMason>
-			<MasonryGrid />
-			{/* <MasonryPhotoAlbum photos={photos} /> */}
+			{/* <MasonryGrid /> */}
+			<MasonryPhotoAlbum photos={photos} columns={4}/>
 		</StyledMason>
 	);
 };
