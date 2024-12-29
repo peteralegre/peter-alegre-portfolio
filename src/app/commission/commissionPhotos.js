@@ -33,8 +33,8 @@ const commissionPhotos = [
 	},
 	{
 		src: '/commission/polaroidNico.jpg',
-		width: 800,
-		height: 1013,
+		width: 889,
+		height: 1000,
 		alt: 'polaroidNico.jpg PLACEHOLDER'
 	},
 	{

@@ -123,8 +123,8 @@ const personalPhotos = [
 	},
 	{
 		src: '/personal/streetCat.jpg',
-		width: 1000,
-		height: 662,
+		width: 662,
+		height: 1000,
 		alt: 'streetCat.jpg PLACEHOLDER'
 	},
     {
