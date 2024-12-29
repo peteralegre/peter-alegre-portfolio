@@ -1,14 +1,13 @@
 'use client';
 import { MasonryPhotoAlbum } from 'react-photo-album';
+import 'react-photo-album/masonry.css';
 import styled from 'styled-components';
 import photos from '../photos';
-import MasonryGrid from '../MasonryGrid';
 
 
 const PersonalWork = () => {
 	return (
 		<StyledMason>
-			{/* <MasonryGrid /> */}
 			<MasonryPhotoAlbum photos={photos} columns={4}/>
 		</StyledMason>
 	);
