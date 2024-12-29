@@ -3,8 +3,8 @@ const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 const personalPhotos = [
 	{
 		src: '/personal/architecture1.jpg',
-		width: 800,
-		height: 533,
+		width: 750,
+		height: 1000,
 		alt: 'architecture1.jpg PLACEHOLDER'
 	},
 	{
@@ -27,14 +27,14 @@ const personalPhotos = [
 	},
 	{
 		src: '/personal/candid1.jpg',
-		width: 800,
-		height: 533,
+		width: 1000,
+		height: 750,
 		alt: 'candid1.jpg PLACEHOLDER'
 	},
 	{
 		src: '/personal/candid2.jpg',
-		width: 800,
-		height: 1013,
+		width: 1000,
+		height: 662,
 		alt: 'candid2.jpg PLACEHOLDER'
 	},
 	{
@@ -45,8 +45,8 @@ const personalPhotos = [
 	},
 	{
 		src: '/personal/candidCheers.jpg',
-		width: 600,
-		height: 800,
+		width: 1000,
+		height: 662,
 		alt: 'candidCheers.jpg PLACEHOLDER'
 	},
 	{
@@ -57,15 +57,15 @@ const personalPhotos = [
 	},
 	{
 		src: '/personal/portrait1.jpg',
-		width: 800,
-		height: 533,
+		width: 533,
+		height: 800,
 		alt: 'portrait1.jpg PLACEHOLDER'
 	},
 	{
-		src: '/personal/portait3.jpg',
+		src: '/personal/portrait3.jpg',
 		width: 584,
 		height: 800,
-		alt: 'portait3.jpg PLACEHOLDER'
+		alt: 'portrait3.jpg PLACEHOLDER'
 	},
 	{
 		src: '/personal/skylineLandscape.jpg',
@@ -117,14 +117,14 @@ const personalPhotos = [
 	},
 	{
 		src: '/personal/streetBaloon.jpg',
-		width: 800,
-		height: 533,
+		width: 662,
+		height: 1000,
 		alt: 'streetBaloon.jpg PLACEHOLDER'
 	},
 	{
 		src: '/personal/streetCat.jpg',
-		width: 800,
-		height: 533,
+		width: 1000,
+		height: 662,
 		alt: 'streetCat.jpg PLACEHOLDER'
 	},
     {
@@ -135,8 +135,8 @@ const personalPhotos = [
 	},
     {
 		src: '/personal/streetMotorcycle.jpg',
-		width: 800,
-		height: 533,
+		width: 1000,
+		height: 662,
 		alt: 'streetMotorcycle.jpg PLACEHOLDER'
 	},
     {
@@ -147,14 +147,14 @@ const personalPhotos = [
 	},
     {
 		src: '/personal/streetSubway2.jpg',
-		width: 800,
-		height: 533,
+		width: 662,
+		height: 1000,
 		alt: 'streetSubway2.jpg PLACEHOLDER'
 	},
     {
 		src: '/personal/streetWindow.jpg',
-		width: 800,
-		height: 533,
+		width: 662,
+		height: 1000,
 		alt: 'streetWindow.jpg PLACEHOLDER'
 	},
 	
