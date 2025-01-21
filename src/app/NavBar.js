@@ -16,17 +16,19 @@ const NavBar = () => {
 			<StyledNavbar shouldHideOnScroll isBordered>
 				<StyledNavbarContent>
 					<StyledNavbarItem>
-						<Link href="/commission">
+						<StyledLink href="/commission">
 							Commission
-						</Link>
+						</StyledLink>
 					</StyledNavbarItem>
 					<StyledNavbarItem>
-						<Link href="/personal">
+						<StyledLink href="/personal">
 							Personal
-						</Link>
+						</StyledLink>
 					</StyledNavbarItem>
 					<StyledNavbarItem isActive>
-						<Link href="/about">About</Link>
+						<StyledLink href="/about">
+							About
+						</StyledLink>
 					</StyledNavbarItem>
 				</StyledNavbarContent>
 			</StyledNavbar>
@@ -47,11 +49,11 @@ const NavContainer = styled.div`
 	height: fit-content;
 	backdrop-filter: blur(10px);
 	background: transparent;
-	/* position: absolute; */
-	-webkit-text-stroke: .2px #d3d3d3;
+	-webkit-text-stroke: 0.2px #d3d3d3;
 `;
 
 const StyledLink = styled(Link)`
+	list-style-type: none;
 	font-size: 2rem;
 	padding-left: 1rem;
 	text-decoration: none;
@@ -62,6 +64,17 @@ const StyledLink = styled(Link)`
 		color: #d3d3d3;
 		-webkit-text-stroke: 1px #000; /* Border around the text */
 	}
+
+	/* Media queries for font sizes */
+	@media (max-width: 800px) {
+		font-size: 1rem; /* Less than 800px */
+	}
+	@media (min-width: 801px) and (max-width: 1248px) {
+		font-size: 1.5rem; /* Between 801px and 1248px */
+	}
+	@media (min-width: 1249px) {
+		font-size: 2rem; /* Larger than 1248px */
+	}
 `;
 
 const StyledNavbar = styled(Navbar)``;
@@ -70,23 +83,19 @@ const StyledNavbarContent = styled(NavbarContent)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
 	padding-right: 1rem;
+
+	@media (max-width: 800px) {
+		gap: 0rem;
+	}
+	@media (min-width: 801px) and (max-width: 1248px) {
+		gap: 1rem;
+	}
+	@media (min-width: 1249px) {
+		gap: 2rem;
+	}
 `;
 
 const StyledNavbarItem = styled(NavbarItem)`
 	list-style-type: none;
-	a {
-		color: #000;
-		text-decoration: none;
-		font-size: 2rem;
-		/* -webkit-text-stroke: 1px #d3d3d3; */
-		transition: color 0.3s ease;
-		/* text-shadow: 3px 3px 3px #000; */
-
-		&:hover {
-			color: #d3d3d3;
-			-webkit-text-stroke: 1px #000; /* Border around the text */
-		}
-	}
 `;
