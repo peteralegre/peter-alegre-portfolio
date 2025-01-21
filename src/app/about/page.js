@@ -17,12 +17,6 @@ const About = () => {
 				</Headshot>
 				<ContactContainer>
 					<SocialLink
-						href="mailto:alegrep@bxscience.com"
-						target="_blank"
-					>
-						<TextContainer>Email</TextContainer>
-					</SocialLink>
-					<SocialLink
 						href="https://www.instagram.com/peteralegre/"
 						target="_blank"
 					>
@@ -30,6 +24,9 @@ const About = () => {
 							Instagram
 						</TextContainer>
 					</SocialLink>
+					<StyledEmail>
+					alegrep@bxscience.com
+					</StyledEmail>
 				</ContactContainer>
 				<TextContainer>
 					<Paragraph>
@@ -50,7 +47,6 @@ const AboutContainer = styled.div`
 `;
 
 const NavBarContainer = styled.div`
-	/* border: 2px solid blue; */
 	display: flex;
 	justify-content: flex-end;
 `;
@@ -68,13 +64,28 @@ const AboutContent = styled.div`
 `;
 
 const Headshot = styled.div`
-	width: 750px;
-	height: 600px;
-
-	@media screen and (max-width: 750px) {
+	width: 100vw;
+	/* height: 600px; */
+	
+	
+	/* @media (max-width: 800px) {
+		width: 375px;
+		height: 300px;
+	}
+	@media (min-width: 801px) and (max-width: 1248px) {
 		width: 500px;
 		height: 400px;
 	}
+	@media (min-width: 1249px) {
+		width: 750px;
+		height: 600px;
+	} */
+`;
+
+const StyledEmail = styled.div`
+	font-family: 'CeraPro', sans-serif;
+	font-size: 24px;
+	margin-top: 1rem;
 `;
 
 const TextContainer = styled.div`
