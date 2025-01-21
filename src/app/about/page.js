@@ -64,9 +64,7 @@ const AboutContent = styled.div`
 `;
 
 const Headshot = styled.div`
-	width: 100vw;
-	/* height: 600px; */
-	
+	margin: auto;	
 	
 	/* @media (max-width: 800px) {
 		width: 375px;
