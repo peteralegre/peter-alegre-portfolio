@@ -25,7 +25,7 @@ const About = () => {
 						</TextContainer>
 					</SocialLink>
 					<StyledEmail>
-					alegrep@bxscience.com
+					forpeteralegre@gmail.com
 					</StyledEmail>
 				</ContactContainer>
 				<TextContainer>
