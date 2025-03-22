@@ -16,7 +16,7 @@ export default function Home() {
 		const updateImage = () => {
 			if (window.innerWidth < 800) {
 				setImageSrc(
-					'/photos/clothingCollection.jpeg'
+					'/photos/clothingCollection.JPG'
 				);
 				setImageSize({ width: 360, height: 543 });
 			} else {
