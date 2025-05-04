@@ -1,18 +1,50 @@
 'use client';
 import React from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 
 const About = () => {
+	const [imageSrc, setImageSrc] = useState(
+		'/photos/Polaroid Self Portrait Exhibit.jpg'
+	);
+	const [imageSize, setImageSize] = useState({
+		width: 1000,
+		height: 600
+	});
+
+	useEffect(() => {
+		const updateImage = () => {
+			if (window.innerWidth < 800) {
+				setImageSrc(
+					'/photos/aboutProfilePic.JPG'
+				);
+				setImageSize({ width: 500, height: 500 });
+			} else {
+				setImageSrc('/photos/Polaroid Self Portrait Exhibit.jpg');
+				setImageSize({ width: 1000, height: 600 });
+			}
+		};
+
+		updateImage();
+		window.addEventListener('resize', updateImage);
+		return () =>
+			window.removeEventListener(
+				'resize',
+				updateImage
+			);
+	}, []);
+
 	return (
 		<AboutContainer>
 			<AboutContent>
 				<Headshot>
 					<Image
-						src="/photos/Polaroid Self Portrait Exhibit.jpg"
+						src={imageSrc}
 						alt="Two Polaroids headshots of Peter Alegre"
-						width={1000}
-						height={600}
+						width={imageSize.width}
+						height={imageSize.height}
+						style={{ width: '100%', height: 'auto' }}
 					/>
 				</Headshot>
 				<ContactContainer>
@@ -25,7 +57,7 @@ const About = () => {
 						</TextContainer>
 					</SocialLink>
 					<StyledEmail>
-					forpeteralegre@gmail.com
+						forpeteralegre@gmail.com
 					</StyledEmail>
 				</ContactContainer>
 				<TextContainer>
@@ -64,20 +96,11 @@ const AboutContent = styled.div`
 `;
 
 const Headshot = styled.div`
-	margin: auto;	
+	margin: 10vh auto 10vh auto;
 	
-	/* @media (max-width: 800px) {
-		width: 375px;
-		height: 300px;
-	}
-	@media (min-width: 801px) and (max-width: 1248px) {
-		width: 500px;
-		height: 400px;
-	}
-	@media (min-width: 1249px) {
-		width: 750px;
-		height: 600px;
-	} */
+	@media screen and (max-width: 750px) {
+		margin: 5vh auto 5vh auto;
+	}	
 `;
 
 const StyledEmail = styled.div`
