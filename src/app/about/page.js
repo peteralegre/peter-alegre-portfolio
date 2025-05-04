@@ -17,7 +17,7 @@ const About = () => {
 		const updateImage = () => {
 			if (window.innerWidth < 800) {
 				setImageSrc(
-					'/photos/aboutProfilePic.JPG'
+					'/photos/aboutProfilePic.jpg'
 				);
 				setImageSize({ width: 500, height: 500 });
 			} else {
