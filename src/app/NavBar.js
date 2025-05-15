@@ -55,15 +55,21 @@ const NavContainer = styled.div`
 const StyledLink = styled(Link)`
 	list-style-type: none;
 	font-size: 2rem;
-	padding-left: 1rem;
 	text-decoration: none;
 	color: #000;
 	transition: color 0.3s ease;
+	margin-left: 1rem;
+	margin-right: 1rem;
+
 
 	&:hover {
 		color: #d3d3d3;
 		-webkit-text-stroke: 1px #000; /* Border around the text */
 	}
+
+	&:focus {
+    outline: none;
+  }
 
 	/* Media queries for font sizes */
 	@media (max-width: 800px) {
