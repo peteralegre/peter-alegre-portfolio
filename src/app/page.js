@@ -49,7 +49,7 @@ export default function Home() {
 const StyledMain = styled.main`
 	display: flex;
 	width: 100%;
-	height: 100%; /* Set a fixed height for demonstration */
+	height: 100%; 
 	overflow-x: auto;
 `;
 
@@ -58,7 +58,8 @@ const HeroImage = styled(Image)`
   height: 100%;
   object-fit: cover;
 
-  @media (min-width: 768px) { /* Applies styles for tablets and desktops */
+  /* tablets and desktops */
+  @media (min-width: 750px) { 
     width: auto;
     height: auto;
     margin: auto;
